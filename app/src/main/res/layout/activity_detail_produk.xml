@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekomartantoh.tokoonline.detailProduk">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/gambarProduk"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="5dp"
+                android:src="@drawable/logopos" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nmBrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="NAMA BARANG"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/hrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HARGA"
+                    android:padding="5dp"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="QTY"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/kurang"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="-"/>
+                    <TextView
+                        android:id="@+id/qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="18sp"
+                        android:padding="10dp"/>
+                    <Button
+                        android:id="@+id/tambah"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="+"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PENGIRIMAN:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/goSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoSend (7 Jam)"/>
+        <RadioButton
+            android:id="@+id/jne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JNE Reguler (2 hari)"/>
+        <RadioButton
+            android:id="@+id/tiki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiki Ons (3 hari)"/>
+        <TextView
+            android:id="@+id/totalHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOTAL HARGA"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:gravity="right"/>
+        <TextView
+            android:id="@+id/biayaKirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIAYA KIRIM"
+            android:textSize="20sp"
+            android:gravity="right"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+        <TextView
+            android:id="@+id/totalBayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOTAL BAYAR"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="end" />
+    </LinearLayout>
+</ScrollView>
